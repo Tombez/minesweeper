@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<Title>Minesweeper</title>
+	
+	<style type="text/CSS">
+		body {
+			margin: 0px;
+			overflow: hidden;
+			background: black;
+		}	
+		#iframe {
+			border: none;
+		}
+	</style>
+	
+</head>
+
+<body>
+
+	<center>
+		<iframe id="iframe" src="./minesweeper.html"></iframe>
+	</center>
+	
+	<script>
+		var iframe = document.getElementById("iframe");
+		window.addEventListener("resize", resize = function() {
+			iframe.width = Math.min(window.innerWidth, window.innerHeight);
+			iframe.height = iframe.width;
+		});
+		resize();
+	</script>
+	
+</body>
+
+</html>
