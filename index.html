@@ -1,29 +1,23 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-
 	<Title>Minesweeper</title>
-	
 	<style type="text/CSS">
 		body {
 			margin: 0px;
 			overflow: hidden;
 			background: black;
-		}	
+		}
 		#iframe {
 			border: none;
 		}
 	</style>
-	
 </head>
-
 <body>
-
 	<center>
-		<iframe id="iframe" src="./minesweeper.html"></iframe>
+		<iframe id="iframe" src="./src/minesweeper.html"></iframe>
 	</center>
-	
+
 	<script>
 		var iframe = document.getElementById("iframe");
 		window.addEventListener("resize", resize = function() {
@@ -32,7 +26,5 @@
 		});
 		resize();
 	</script>
-	
 </body>
-
 </html>
